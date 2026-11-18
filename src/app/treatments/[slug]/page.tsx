@@ -275,7 +275,7 @@ export default async function TreatmentDetailPage({ params }: Props) {
           </div>
 
           {/* Sidebar Booking Form & Doctor Note (5 cols) */}
-          <div className="lg:col-span-5 sticky top-24 space-y-6">
+          <div className="lg:col-span-5 space-y-6">
             
             {/* Interactive Form Pre-Configured for this Treatment */}
             <AppointmentForm initialTreatment={treatment.title} />

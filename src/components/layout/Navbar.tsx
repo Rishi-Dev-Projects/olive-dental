@@ -99,10 +99,10 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Right Header Actions */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <Link
               href="/contact#book"
-              className="inline-flex items-center justify-center rounded-full bg-olive-900 text-ivory-50 text-xs sm:text-[13px] font-medium px-4 sm:px-5 py-2 sm:py-2.5 transition-all duration-200 hover:bg-olive-800 active:scale-[0.98] shadow-sm tracking-wide"
+              className="hidden sm:inline-flex items-center justify-center rounded-full bg-olive-900 text-ivory-50 text-xs sm:text-[13px] font-medium px-4 sm:px-5 py-2 sm:py-2.5 transition-all duration-200 hover:bg-olive-800 active:scale-[0.98] shadow-sm tracking-wide whitespace-nowrap"
             >
               Book Appointment
             </Link>
@@ -110,7 +110,7 @@ export const Navbar: React.FC = () => {
             {/* Mobile Hamburger Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden flex items-center justify-center w-9 h-9 rounded-full bg-stone-100 text-charcoal-800 hover:bg-stone-200 transition-colors focus:outline-none"
+              className="lg:hidden flex items-center justify-center w-9 h-9 rounded-full bg-stone-100 text-charcoal-800 hover:bg-stone-200 transition-colors focus:outline-none flex-shrink-0"
               aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen}
             >
